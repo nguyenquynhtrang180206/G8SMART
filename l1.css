@@ -280,7 +280,14 @@ p,
     }
 }
 
-/* Banner */
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Banner container */
 .banner {
   display: flex;
   flex-direction: column;   /* xếp dọc */
@@ -288,20 +295,12 @@ p,
   overflow: hidden;
 }
 
+/* Banner images */
 .banner-img {
   width: 100%;
   height: 50vh;             /* mỗi ảnh = nửa màn hình */
   object-fit: cover;        /* cắt ảnh vừa khung, không méo */
   display: block;
-}
-
-.banner {
-    margin: 20px 0;
-}
-
-.banner-img {
-    width: 100%;
-    height: auto;
 }
 
 /* Hero Section */
