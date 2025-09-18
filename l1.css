@@ -296,7 +296,7 @@ p,
 /* Banner images */
 .banner-img {
     width: 100%;
-    height: 60vh;
+    height: 90vh;
     object-fit: cover;
     display: block;
 }
