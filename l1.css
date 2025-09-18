@@ -217,8 +217,6 @@ p,
     background-color: #e60000;
 }
 
-
-
 .logo {
     display: flex;
     align-items: center;
@@ -229,7 +227,7 @@ p,
 .logo-img {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, red, #1e40af);
+    background: #28a745;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -393,27 +391,27 @@ p,
     }
 }
 
-
-/* Banner */
-.banner {
-    margin: 20px 0;
-}
-
 /* Banner container */
 .banner {
     display: flex;
     flex-direction: column;
+    /* xếp dọc */
+    height: 100vh;
+    /* tổng cộng = 1 màn hình */
+    margin: 0;
+    /* bỏ margin cho full màn hình */
     overflow: hidden;
 }
 
 /* Banner images */
 .banner-img {
     width: 100%;
-    height: 90vh;
+    height: 60vh;
+    /* mỗi ảnh chiếm nửa màn hình */
     object-fit: cover;
+    /* ảnh cắt vừa khung, không méo */
     display: block;
 }
-
 
 /* Hero Section */
 .hero {
@@ -534,9 +532,7 @@ p,
     border-radius: 5px;
     font-size: 1em;
     width: 200px;
-    /* Độ rộng cố định cho select */
     appearance: none;
-    /* Loại bỏ kiểu mặc định của trình duyệt */
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="%23333" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>') no-repeat right 10px center;
     background-size: 12px;
     cursor: pointer;
@@ -546,6 +542,110 @@ p,
     outline: none;
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    /* Ensure consistent minimum height */
+}
+
+/* Ensure images have a consistent size */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    /* Fixed height for consistency */
+    object-fit: cover;
+    /* Ensure images scale properly */
+    border-radius: 5px;
+}
+
+/* Product description with constrained height */
+.product-card .desc {
+    flex-grow: 1;
+    margin: 10px 0;
+    min-height: 60px;
+    /* Reserve space for description */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Price and meta styling */
+.product-card .price {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.product-card .meta {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Align button at the bottom */
+.product-card .add-cart {
+    margin-top: auto;
+    /* Push button to the bottom */
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.product-card .add-cart:hover {
+    background-color: #0056b3;
+}
+
+/* Badge styling */
+.product-card .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.badge.hot {
+    background-color: #ff4d4f;
+}
+
+.badge.sale {
+    background-color: #28a745;
+}
+
+.badge.premium {
+    background-color: #ffc107;
+}
+
+.badge.new {
+    background-color: #17a2b8;
 }
 
 /* Responsive Design */
@@ -558,29 +658,17 @@ p,
 
     .product-filter .form-control {
         width: 100%;
-        /* Đầy đủ chiều rộng trên màn hình nhỏ */
     }
-}
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
+    .product-card {
+        min-height: 350px;
+        /* Adjust for smaller screens */
+    }
 
-.product-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    text-align: center;
-    position: relative;
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+    .product-card img {
+        height: 150px;
+        /* Adjust image height for smaller screens */
+    }
 }
 
 .badge {
