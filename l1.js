@@ -523,3 +523,23 @@ document.addEventListener('DOMContentLoaded', () => {
 // Initialize UI
 updateCartUI();
 updateFavorites();
+
+
+document.getElementById("cartBtn").addEventListener("click", function (e) {
+    e.preventDefault(); // tránh load lại trang
+    const buyNow = document.getElementById("buyNowContainer");
+
+    if (buyNow.style.display === "none" || buyNow.style.display === "") {
+        buyNow.style.display = "block";
+        buyNow.innerHTML = '<button id="buyNowBtn">Mua hàng</button>';
+
+        // Gắn sự kiện cho nút Mua hàng
+        document.getElementById("buyNowBtn").addEventListener("click", function () {
+            // Chuyển sang trang thanh toán
+            window.location.href = "checkout.html";
+        });
+    } else {
+        buyNow.style.display = "none";
+    }
+});
+
