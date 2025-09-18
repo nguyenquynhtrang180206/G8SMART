@@ -119,7 +119,7 @@ p,
 .logo-img {
     font-size: 24px;
     font-weight: bold;
-    background: #ff4d4d;
+    background: linear-gradient(135deg, red, #1e40af);
     color: #fff;
     padding: 8px 12px;
     border-radius: 6px;
