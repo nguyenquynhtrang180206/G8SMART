@@ -280,18 +280,12 @@ p,
     }
 }
 
-/* Reset cơ bản */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /* Banner container */
 .banner {
   display: flex;
   flex-direction: column;   /* xếp dọc */
-  height: 100vh;            /* chiếm đủ 1 màn hình */
+/*   height: 100vh;            /* chiếm đủ 1 màn hình */ */
   overflow: hidden;
 }
 
