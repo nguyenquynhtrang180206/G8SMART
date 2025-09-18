@@ -606,7 +606,7 @@ p,
     margin-top: auto;
     /* Push button to the bottom */
     padding: 10px;
-    background-color: #007bff;
+    background-color: #2c5aa0;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -618,7 +618,7 @@ p,
 }
 
 .product-card .add-cart:hover {
-    background-color: #0056b3;
+    background-color: #2c5aa0;
 }
 
 /* Badge styling */
