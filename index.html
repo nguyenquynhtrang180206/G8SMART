@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>G8 SMART - Sạc Nhanh Chính Hãng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="G8 SMART - Cung cấp sạc nhanh, cáp sạc, pin dự phòng chính hãng từ Anker, Belkin, Samsung, Apple. Bảo hành 12 tháng, giao hàng toàn quốc.">
+    <meta name="keywords"
+        content="sạc nhanh, cáp sạc, pin dự phòng, Anker, Belkin, Samsung, Apple, phụ kiện điện thoại, G8 SMART">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="G8 SMART - Sạc Nhanh Chính Hãng">
+    <meta property="og:description"
+        content="Mua sạc nhanh, cáp sạc, pin dự phòng chính hãng từ Anker, Belkin, Samsung, Apple. Bảo hành 12 tháng, giao hàng toàn quốc.">
+    <meta property="og:image" content="https://g8smart.vn/logo.png">
+    <meta property="og:url" content="https://g8smart.vn">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="stylesheet" type="text/css" media="screen" href="l1.css">
+    <link rel="preload" href="l1.css" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script src="l1.js" defer></script>
+</head>
+
+<body>
+    <!-- Header Top -->
+    <div class="header-top">
+        <div class="container">
+            <div class="left-info">
+                <span><i class="fas fa-truck"></i> Miễn phí giao hàng đơn từ 500k</span>
+                <span><i class="fas fa-shield-alt"></i> Bảo hành chính hãng 12 tháng</span>
+            </div>
+            <div class="right-info">
+                <span><i class="fas fa-phone-alt"></i> Hotline: <strong>1900 1234</strong> (8:00 - 22:00)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Main -->
+    <header class="header-main">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-img">G8</div>
+                <div class="logo-text">
+                    <h1>G8 SMART</h1>
+                    <p><strong>Sạc Nhanh Chính Hãng</strong></p>
+
+                </div>
+            </a>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Tìm sạc nhanh, cáp sạc, pin dự phòng..."
+                    aria-label="Nhập từ khóa tìm kiếm">
+                <button type="button" id="searchBtn" aria-label="Tìm kiếm">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="header-actions">
+                <a href="#favorites" class="header-action" id="favoriteBtn" aria-label="Danh sách yêu thích">
+                    <i class="fas fa-heart"></i>
+                    <span>Yêu thích<br><small id="favCount">(0)</small></span>
+                </a>
+                <a href="#cart" class="header-action" id="cartBtn" aria-label="Giỏ hàng">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Giỏ hàng<br><small id="cartTotal">0₫</small></span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-logo">G8 SMART</div>
+            <ul class="nav-list" id="navList">
+                <li><a href="#home" aria-label="Trang chủ"><i class="fas fa-home"></i> Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#products" aria-label="Sản phẩm"><i class="fas fa-bolt"></i> Sản phẩm <i
+                            class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#fast-charge">Sạc nhanh</a></li>
+                        <li><a href="#cables">Cáp sạc</a></li>
+                        <li><a href="#powerbank">Pin dự phòng</a></li>
+                        <li><a href="#wireless">Sạc không dây</a></li>
+                        <li><a href="#accessories">Phụ kiện</a></li>
+                    </ul>
+                </li>
+                <li><a href="#sale" aria-label="Giảm giá"><i class="fas fa-tags"></i> Giảm giá</a></li>
+                <li><a href="#contact" aria-label="Liên hệ"><i class="fas fa-phone"></i> Liên hệ</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu di động">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <a href="#sale" class="banner-link" aria-label="Mua ngay ưu đãi giảm giá">
+            <img src="https://bizweb.dktcdn.net/100/517/468/files/banner-1920x533-01.jpg?v=1719760367563"
+                alt="Ưu đãi sạc nhanh chính hãng giảm đến 30%" class="banner-img" loading="lazy" width="1920"
+                height="533" onerror="this.src='https://g8smart.vn/images/fallback-banner.jpg'">
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <h2 class="page-title">Trang chủ</h2>
+    <section id="home" class="hero" role="banner">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Sạc Nhanh Chính Hãng<br>Giá Tốt Nhất Thị Trường</h2>
+                    <p>Chuyên cung cấp sạc nhanh, cáp sạc, pin dự phòng từ các thương hiệu uy tín như Anker, Belkin,
+                        Samsung, Apple. Bảo hành 12 tháng, giao hàng toàn quốc.</p>
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Giao hàng nhanh</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Bảo hành 12 tháng</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fas fa-medal"></i>
+                            <span>Hàng chính hãng</span>
+                        </div>
+                    </div>
+                    <a href="#fast-charge" class="cta-button" aria-label="Mua ngay các sản phẩm sạc nhanh">
+                        <i class="fas fa-shopping-bag"></i> Mua ngay - Giá tốt
+                    </a>
+                </div>
+                <div class="hero-tools">
+                    <h3 class="tool-title">Tính thời gian sạc</h3>
+                    <form id="chargeCalculator" aria-label="Tính toán thời gian sạc" novalidate>
+                        <div class="form-group">
+                            <label for="deviceType">Chọn thiết bị</label>
+                            <select class="form-control" id="deviceType" required>
+                                <option value="">-- Chọn thiết bị --</option>
+                                <option value="iphone15">iPhone 15 / 15 Pro</option>
+                                <option value="iphone14">iPhone 14 / 14 Pro</option>
+                                <option value="iphone13">iPhone 13 / 13 Pro</option>
+                                <option value="samsung-s24">Samsung Galaxy S24</option>
+                                <option value="samsung-s23">Samsung Galaxy S23</option>
+                                <option value="xiaomi14">Xiaomi 14</option>
+                                <option value="oppo-find">Oppo Find X6</option>
+                            </select>
+                            <span class="error-message" id="deviceTypeError">Vui lòng chọn thiết bị.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="currentBattery">Pin hiện tại (%)</label>
+                            <input type="number" class="form-control" id="currentBattery" min="0" max="100"
+                                placeholder="VD: 20" required aria-describedby="batteryHelp batteryError">
+                            <small id="batteryHelp" class="form-text">Nhập giá trị từ 0 đến 100.</small>
+                            <span class="error-message" id="batteryError">Vui lòng nhập giá trị từ 0 đến 100.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="chargerWatt">Loại sạc</label>
+                            <select class="form-control" id="chargerWatt" required>
+                                <option value="">-- Chọn công suất sạc --</option>
+                                <option value="20">Sạc PD 20W</option>
+                                <option value="30">Sạc PD 30W</option>
+                                <option value="67">Sạc nhanh 67W</option>
+                                <option value="100">Sạc siêu nhanh 100W</option>
+                                <option value="15">Sạc không dây 15W</option>
+                            </select>
+                            <span class="error-message" id="chargerWattError">Vui lòng chọn loại sạc.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-calculator"></i> Tính toán
+                        </button>
+                    </form>
+                    <div id="chargeResult" class="result-box" role="alert">
+                        <i class="fas fa-clock"></i> <span id="resultText"></span>
+                    </div>
+                    <noscript>
+                        <p class="no-js">Tính năng tính thời gian sạc yêu cầu JavaScript. Vui lòng bật JavaScript để sử
+                            dụng.</p>
+                    </noscript>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <h2 class="page-title">Danh mục sản phẩm</h2>
+    <section class="categories" role="navigation">
+        <div class="container category-bar">
+            <a href="#fast-charge" class="category-item" aria-label="Sạc nhanh"><i class="fas fa-bolt"></i> Sạc
+                nhanh</a>
+            <a href="#cables" class="category-item" aria-label="Cáp sạc"><i class="fas fa-plug"></i> Cáp sạc</a>
+            <a href="#powerbank" class="category-item" aria-label="Pin dự phòng"><i class="fas fa-battery-full"></i> Pin
+                dự phòng</a>
+            <a href="#wireless" class="category-item" aria-label="Sạc không dây"><i class="fas fa-wifi"></i> Sạc không
+                dây</a>
+            <a href="#accessories" class="category-item" aria-label="Phụ kiện"><i class="fas fa-mobile-alt"></i> Phụ
+                kiện</a>
+            <a href="#sale" class="category-item" aria-label="Giảm giá"><i class="fas fa-tags"></i> Giảm giá</a>
+        </div>
+    </section>
+
+    <!-- Sạc nhanh -->
+    <section id="fast-charge" class="products" role="region" aria-labelledby="fast-charge-title">
+        <div class="container">
+            <h2 id="fast-charge-title">Sạc nhanh</h2>
+            <div class="product-filter">
+                <label for="sortOptions-fast-charge">Sắp xếp theo:</label>
+                <select id="sortOptions-fast-charge" class="form-control" aria-label="Sắp xếp sản phẩm sạc nhanh">
+                    <option value="default">Mặc định</option>
+                    <option value="priceAsc">Giá: Thấp đến Cao</option>
+                    <option value="priceDesc">Giá: Cao đến Thấp</option>
+                    <option value="popular">Phổ biến</option>
+                </select>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-price="590000" data-popularity="1250">
+                    <span class="badge hot">Bán chạy</span>
+                    <img src="https://cdn.tgdd.vn/Files/2020/04/13/1248650/untitled-1_800x450.jpg"
+                        alt="Sạc nhanh Anker PowerPort PD 30W USB-C PowerIQ 3.0" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://cdn.tgdd.vn/Files/2020/04/13/1248650/untitled-1_800x450.jpg'">
+                    <h3>Sạc nhanh Anker PowerPort PD 30W</h3>
+                    <p class="desc">PD 30W • USB-C • PowerIQ 3.0 • Bảo vệ quá nhiệt • Tương thích iPhone, Samsung</p>
+                    <div class="price"><span class="new">590.000₫</span> <span class="old">790.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (234)</span> • Đã bán 1250</div>
+                    <button class="add-cart" aria-label="Thêm Sạc nhanh Anker PowerPort PD 30W vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="750000" data-popularity="680">
+                    <span class="badge sale">Giảm 10%</span>
+                    <img src="https://cdn.tgdd.vn/Files/2020/04/13/1248650/untitled-1_800x450.jpg"
+                        alt="Sạc nhanh Belkin 30W USB-C sạc an toàn" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://cdn.tgdd.vn/Files/2020/04/13/1248650/untitled-1_800x450.jpg'">
+                    <h3>Sạc nhanh Belkin 30W</h3>
+                    <p class="desc">PD 30W • USB-C • Sạc nhanh an toàn • Tương thích đa thiết bị</p>
+                    <div class="price"><span class="new">750.000₫</span> <span class="old">830.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (150)</span> • Đã bán 680</div>
+                    <button class="add-cart" aria-label="Thêm Sạc nhanh Belkin 30W vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="690000" data-popularity="530">
+                    <span class="badge premium">Cao cấp</span>
+                    <img src="https://cdn.tgdd.vn/Files/2020/04/13/1248650/untitled-2_800x450.jpg"
+                        alt="Sạc nhanh Samsung 25W USB-C tương thích Galaxy" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://cdn.tgdd.vn/Files/2020/04/13/1248650/untitled-2_800x450.jpg'">
+                    <h3>Sạc nhanh Samsung 25W</h3>
+                    <p class="desc">Sạc nhanh 25W • Tương thích Galaxy • USB-C • Bảo vệ dòng điện</p>
+                    <div class="price"><span class="new">690.000₫</span> <span class="old">890.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (120)</span> • Đã bán 530</div>
+                    <button class="add-cart" aria-label="Thêm Sạc nhanh Samsung 25W vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="850000" data-popularity="310">
+                    <span class="badge new">Mới</span>
+                    <img src="https://cdn.tgdd.vn/Files/2020/04/13/1248650/untitled-2_800x450.jpg"
+                        alt="Sạc nhanh Apple 20W USB-C bảo vệ dòng điện" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Sạc nhanh Apple 20W</h3>
+                    <p class="desc">PD 20W • USB-C • Bảo vệ dòng điện • Tương thích iPhone</p>
+                    <div class="price"><span class="new">850.000₫</span> <span class="old">990.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (98)</span> • Đã bán 310</div>
+                    <button class="add-cart" aria-label="Thêm Sạc nhanh Apple 20W vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cáp sạc -->
+    <section id="cables" class="products" role="region" aria-labelledby="cables-title">
+        <div class="container">
+            <h2 id="cables-title">Cáp sạc</h2>
+            <div class="product-filter">
+                <label for="sortOptions-cables">Sắp xếp theo:</label>
+                <select id="sortOptions-cables" class="form-control" aria-label="Sắp xếp sản phẩm cáp sạc">
+                    <option value="default">Mặc định</option>
+                    <option value="priceAsc">Giá: Thấp đến Cao</option>
+                    <option value="priceDesc">Giá: Cao đến Thấp</option>
+                    <option value="popular">Phổ biến</option>
+                </select>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-price="350000" data-popularity="2180">
+                    <span class="badge hot">Bán chạy</span>
+                    <img src="https://cdn.tgdd.vn/Files/2020/04/13/1248650/untitled-2_800x450.jpg"
+                        alt="Cáp sạc Anker 1m MFi Certified dây bọc dù chống gãy" loading="lazy" width="250"
+                        height="200" onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Cáp sạc Anker 1m</h3>
+                    <p class="desc">MFi Certified • Dây bọc dù • Chống gãy • Tương thích iPhone</p>
+                    <div class="price"><span class="new">350.000₫</span> <span class="old">450.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (456)</span> • Đã bán 2180</div>
+                    <button class="add-cart" aria-label="Thêm Cáp sạc Anker 1m vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="290000" data-popularity="1250">
+                    <img src="https://cdn.tgdd.vn/Files/2020/04/13/1248650/untitled-3_800x450.jpg"
+                        alt="Cáp sạc Belkin 1.2m sạc nhanh dây dù siêu bền" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Cáp sạc Belkin 1.2m</h3>
+                    <p class="desc">Sạc nhanh • Dây dù siêu bền • Tương thích đa thiết bị</p>
+                    <div class="price"><span class="new">290.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (200)</span> • Đã bán 1250</div>
+                    <button class="add-cart" aria-label="Thêm Cáp sạc Belkin 1.2m vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="450000" data-popularity="900">
+                    <span class="badge premium">Cao cấp</span>
+                    <img src="https://cdn.tgdd.vn/Files/2020/04/13/1248650/untitled-3_800x450.jpg"
+                        alt="Cáp sạc Apple chính hãng MFi bền bỉ an toàn" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Cáp sạc Apple chính hãng</h3>
+                    <p class="desc">Chuẩn Apple MFi • Bền bỉ • An toàn • Tương thích iPhone</p>
+                    <div class="price"><span class="new">450.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (310)</span> • Đã bán 900</div>
+                    <button class="add-cart" aria-label="Thêm Cáp sạc Apple chính hãng vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="180000" data-popularity="480">
+                    <img src="https://cdn.tgdd.vn/Files/2020/04/13/1248650/untitled-3_800x450.jpg"
+                        alt="Cáp sạc Samsung 1m USB-C sạc nhanh dây chống rối" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Cáp sạc Samsung 1m</h3>
+                    <p class="desc">USB-C • Sạc nhanh • Dây chống rối • Tương thích Galaxy</p>
+                    <div class="price"><span class="new">180.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (150)</span> • Đã bán 480</div>
+                    <button class="add-cart" aria-label="Thêm Cáp sạc Samsung 1m vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pin dự phòng -->
+    <section id="powerbank" class="products" role="region" aria-labelledby="powerbank-title">
+        <div class="container">
+            <h2 id="powerbank-title">Pin dự phòng</h2>
+            <div class="product-filter">
+                <label for="sortOptions-powerbank">Sắp xếp theo:</label>
+                <select id="sortOptions-powerbank" class="form-control" aria-label="Sắp xếp sản phẩm pin dự phòng">
+                    <option value="default">Mặc định</option>
+                    <option value="priceAsc">Giá: Thấp đến Cao</option>
+                    <option value="priceDesc">Giá: Cao đến Thấp</option>
+                    <option value="popular">Phổ biến</option>
+                </select>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-price="1200000" data-popularity="890">
+                    <span class="badge premium">Cao cấp</span>
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/57/336355/pin-sac-du-phong-25000mah-type-c-pd-qc-3-0-165w-anker-zolo-a1695-kem-cap-1-638792914702938941-750x500.jpg"
+                        alt="Pin dự phòng Anker 20000mAh PD 18W 2 cổng USB-C" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Pin dự phòng Anker 20000mAh</h3>
+                    <p class="desc">20000mAh • PD 18W • 2 cổng USB-C • LED hiển thị</p>
+                    <div class="price"><span class="new">1.200.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (128)</span> • Đã bán 890</div>
+                    <button class="add-cart" aria-label="Thêm Pin dự phòng Anker 20000mAh vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="890000" data-popularity="720">
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/57/336355/pin-sac-du-phong-25000mah-type-c-pd-qc-3-0-165w-anker-zolo-a1695-kem-cap-1-638792914702938941-750x500.jpg"
+                        alt="Pin dự phòng Belkin 10000mAh 15W nhỏ gọn" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Pin dự phòng Belkin 10000mAh</h3>
+                    <p class="desc">Nhỏ gọn • Sạc nhanh 15W • Tương thích đa thiết bị</p>
+                    <div class="price"><span class="new">890.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (110)</span> • Đã bán 720</div>
+                    <button class="add-cart" aria-label="Thêm Pin dự phòng Belkin 10000mAh vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="690000" data-popularity="1800">
+                    <span class="badge hot">Bán chạy</span>
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/57/336355/pin-sac-du-phong-25000mah-type-c-pd-qc-3-0-165w-anker-zolo-a1695-kem-cap-1-638792914702938941-750x500.jpg"
+                        alt="Pin dự phòng Xiaomi 20000mAh 22.5W 2 cổng USB-A" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Pin dự phòng Xiaomi 20000mAh</h3>
+                    <p class="desc">Sạc nhanh 22.5W • LED • 2 USB-A • Tương thích đa thiết bị</p>
+                    <div class="price"><span class="new">690.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (300)</span> • Đã bán 1800</div>
+                    <button class="add-cart" aria-label="Thêm Pin dự phòng Xiaomi 20000mAh vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="750000" data-popularity="600">
+                    <img src="https://g8smart.vn/images/samsung-powerbank-10000mah.jpg"
+                        alt="Pin dự phòng Samsung 10000mAh PD 15W 2 cổng USB-C" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Pin dự phòng Samsung 10000mAh</h3>
+                    <p class="desc">PD 15W • 2 cổng USB-C • Tương thích Galaxy</p>
+                    <div class="price"><span class="new">750.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (160)</span> • Đã bán 600</div>
+                    <button class="add-cart" aria-label="Thêm Pin dự phòng Samsung 10000mAh vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sạc không dây -->
+    <section id="wireless" class="products" role="region" aria-labelledby="wireless-title">
+        <div class="container">
+            <h2 id="wireless-title">Sạc không dây</h2>
+            <div class="product-filter">
+                <label for="sortOptions-wireless">Sắp xếp theo:</label>
+                <select id="sortOptions-wireless" class="form-control" aria-label="Sắp xếp sản phẩm sạc không dây">
+                    <option value="default">Mặc định</option>
+                    <option value="priceAsc">Giá: Thấp đến Cao</option>
+                    <option value="priceDesc">Giá: Cao đến Thấp</option>
+                    <option value="popular">Phổ biến</option>
+                </select>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-price="1390000" data-popularity="250">
+                    <span class="badge new">Mới</span>
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/57/344487/sac-du-phong-polymer-khong-day-magnetic-qi2-2-type-c-pd-30w-ugreen-pb773-thumb-638926650632335177-600x600.jpg"
+                        alt="Sạc không dây Apple MagSafe 15W chuẩn Qi" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Sạc không dây MagSafe 15W</h3>
+                    <p class="desc">Magnetic • 15W • Chuẩn Qi • LED hiển thị</p>
+                    <div class="price"><span class="new">1.390.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (50)</span> • Đã bán 250</div>
+                    <button class="add-cart" aria-label="Thêm Sạc không dây MagSafe 15W vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="990000" data-popularity="410">
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/57/344487/sac-du-phong-polymer-khong-day-magnetic-qi2-2-type-c-pd-30w-ugreen-pb773-thumb-638926650632335177-600x600.jpg"
+                        alt="Sạc không dây Anker 15W với quạt làm mát" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Sạc không dây Anker</h3>
+                    <p class="desc">15W • LED indicator • Quạt làm mát • Tương thích Qi</p>
+                    <div class="price"><span class="new">990.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (88)</span> • Đã bán 410</div>
+                    <button class="add-cart" aria-label="Thêm Sạc không dây Anker 15W vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="1090000" data-popularity="320">
+                    <span class="badge premium">Cao cấp</span>
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/57/344487/sac-du-phong-polymer-khong-day-magnetic-qi2-2-type-c-pd-30w-ugreen-pb773-thumb-638926650632335177-600x600.jpg"
+                        alt="Sạc không dây Belkin cao cấp tốc độ cao" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Sạc không dây Belkin</h3>
+                    <p class="desc">Tốc độ cao • Thiết kế sang trọng • Tương thích Qi</p>
+                    <div class="price"><span class="new">1.090.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (70)</span> • Đã bán 320</div>
+                    <button class="add-cart" aria-label="Thêm Sạc không dây Belkin cao cấp vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="1290000" data-popularity="456">
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/57/344487/sac-du-phong-polymer-khong-day-magnetic-qi2-2-type-c-pd-30w-ugreen-pb773-thumb-638926650632335177-600x600.jpg"
+                        alt="Sạc không dây Samsung 15W chuẩn Qi" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Sạc không dây Samsung</h3>
+                    <p class="desc">15W Fast Wireless • Qi Certified • Tương thích Galaxy</p>
+                    <div class="price"><span class="new">1.290.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (89)</span> • Đã bán 456</div>
+                    <button class="add-cart" aria-label="Thêm Sạc không dây Samsung 15W vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phụ kiện -->
+    <section id="accessories" class="products" role="region" aria-labelledby="accessories-title">
+        <div class="container">
+            <h2 id="accessories-title">Phụ kiện</h2>
+            <div class="product-filter">
+                <label for="sortOptions-accessories">Sắp xếp theo:</label>
+                <select id="sortOptions-accessories" class="form-control" aria-label="Sắp xếp sản phẩm phụ kiện">
+                    <option value="default">Mặc định</option>
+                    <option value="priceAsc">Giá: Thấp đến Cao</option>
+                    <option value="priceDesc">Giá: Cao đến Thấp</option>
+                    <option value="popular">Phổ biến</option>
+                </select>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-price="250000" data-popularity="980">
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/57/341412/pin-sac-du-phong-10000mah-type-c-pd-qc-3-0-30w-ugreen-pb502-thumb-638891213243173237-600x600.jpg"
+                        alt="Ốp lưng iPhone chống sốc siêu mỏng nhẹ" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Ốp lưng iPhone</h3>
+                    <p class="desc">Chống sốc • Siêu mỏng nhẹ • Tương thích iPhone</p>
+                    <div class="price"><span class="new">250.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (180)</span> • Đã bán 980</div>
+                    <button class="add-cart" aria-label="Thêm Ốp lưng iPhone chống sốc vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="190000" data-popularity="520">
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/57/341412/pin-sac-du-phong-10000mah-type-c-pd-qc-3-0-30w-ugreen-pb502-thumb-638891213243173237-600x600.jpg"
+                        alt="Giá đỡ điện thoại gấp gọn chống trượt" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Giá đỡ điện thoại</h3>
+                    <p class="desc">Gấp gọn • Chống trượt • Tương thích đa thiết bị</p>
+                    <div class="price"><span class="new">190.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (90)</span> • Đã bán 520</div>
+                    <button class="add-cart" aria-label="Thêm Giá đỡ điện thoại gấp gọn vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="320000" data-popularity="260">
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/57/341412/pin-sac-du-phong-10000mah-type-c-pd-qc-3-0-30w-ugreen-pb502-thumb-638891213243173237-600x600.jpg"
+                        alt="Bao da điện thoại da PU chống trầy xước" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Bao da điện thoại</h3>
+                    <p class="desc">Da PU • Chống trầy xước • Tương thích đa thiết bị</p>
+                    <div class="price"><span class="new">320.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (70)</span> • Đã bán 260</div>
+                    <button class="add-cart" aria-label="Thêm Bao da điện thoại da PU vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="150000" data-popularity="210">
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/57/341412/pin-sac-du-phong-10000mah-type-c-pd-qc-3-0-30w-ugreen-pb502-thumb-638891213243173237-600x600.jpg"
+                        alt="Dây đeo điện thoại bền bỉ tháo lắp dễ dàng" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Dây đeo điện thoại</h3>
+                    <p class="desc">Tháo lắp dễ dàng • Bền bỉ • Tương thích đa thiết bị</p>
+                    <div class="price"><span class="new">150.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (60)</span> • Đã bán 210</div>
+                    <button class="add-cart" aria-label="Thêm Dây đeo điện thoại bền bỉ vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Giảm giá -->
+    <section id="sale" class="products" role="region" aria-labelledby="sale-title">
+        <div class="container">
+            <h2 id="sale-title">Đang giảm giá</h2>
+            <div class="product-filter">
+                <label for="sortOptions-sale">Sắp xếp theo:</label>
+                <select id="sortOptions-sale" class="form-control" aria-label="Sắp xếp sản phẩm giảm giá">
+                    <option value="default">Mặc định</option>
+                    <option value="priceAsc">Giá: Thấp đến Cao</option>
+                    <option value="priceDesc">Giá: Cao đến Thấp</option>
+                    <option value="popular">Phổ biến</option>
+                </select>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-price="690000" data-popularity="420">
+                    <span class="badge sale">Giảm 20%</span>
+                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/cap-type-c-to-lightning-baseus-crystal-shine-1-2m_1_.png"
+                        alt="Sạc nhanh Anker 30W USB-C giảm giá 20%" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Sạc nhanh Anker 30W</h3>
+                    <p class="desc">Sạc nhanh • USB-C • An toàn • Tương thích đa thiết bị</p>
+                    <div class="price"><span class="new">690.000₫</span> <span class="old">850.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (99)</span> • Đã bán 420</div>
+                    <button class="add-cart" aria-label="Thêm Sạc nhanh Anker 30W giảm giá 20% vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="950000" data-popularity="320">
+                    <span class="badge sale">Giảm 25%</span>
+                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/cap-type-c-to-lightning-baseus-crystal-shine-1-2m_1_.png"
+                        alt="Pin dự phòng Samsung 10000mAh PD 15W giảm giá 25%" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Pin dự phòng Samsung</h3>
+                    <p class="desc">10000mAh • PD 15W • Tương thích Galaxy</p>
+                    <div class="price"><span class="new">950.000₫</span> <span class="old">1.200.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (85)</span> • Đã bán 320</div>
+                    <button class="add-cart"
+                        aria-label="Thêm Pin dự phòng Samsung 10000mAh giảm giá 25% vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="250000" data-popularity="1050">
+                    <span class="badge sale">Giảm 30%</span>
+                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/cap-type-c-to-lightning-baseus-crystal-shine-1-2m_1_.png"
+                        alt="Cáp sạc Belkin MFi Certified dây bọc dù giảm giá 30%" loading="lazy" width="250"
+                        height="200" onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Cáp sạc Belkin</h3>
+                    <p class="desc">MFi Certified • Dây bọc dù • Tương thích iPhone</p>
+                    <div class="price"><span class="new">250.000₫</span> <span class="old">350.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (300)</span> • Đã bán 1050</div>
+                    <button class="add-cart" aria-label="Thêm Cáp sạc Belkin MFi Certified giảm giá 30% vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+                <div class="product-card" data-price="1290000" data-popularity="280">
+                    <span class="badge sale">Giảm 15%</span>
+                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/cap-type-c-to-lightning-baseus-crystal-shine-1-2m_1_.png"
+                        alt="Sạc không dây Apple MagSafe 15W giảm giá 15%" loading="lazy" width="250" height="200"
+                        onerror="this.src='https://g8smart.vn/images/fallback-product.jpg'">
+                    <h3>Sạc không dây Apple</h3>
+                    <p class="desc">MagSafe • 15W • Chuẩn Qi • Tương thích iPhone</p>
+                    <div class="price"><span class="new">1.290.000₫</span> <span class="old">1.590.000₫</span></div>
+                    <div class="meta"><span class="rating">★★★★☆ (60)</span> • Đã bán 280</div>
+                    <button class="add-cart" aria-label="Thêm Sạc không dây Apple MagSafe giảm giá 15% vào giỏ hàng"><i
+                            class="fas fa-cart-plus"></i> Thêm giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minigame: Bắn Bong Bóng -->
+    <section class="bubble-game" role="region" aria-labelledby="bubble-title">
+        <div class="container">
+            <h2 class="section-title" id="bubble-title">Minigame: Bắn Bong Bóng Nhận Voucher 🎈</h2>
+            <p class="game-desc">Nhấn vào bong bóng để nhận voucher trong 15 giây!</p>
+            <button id="startBubbleGame" class="btn btn-primary">Bắt đầu chơi</button>
+            <div id="bubbleArea" class="bubble-area"></div>
+            <div id="bubbleResultBox" class="result-box">
+                <i class="fas fa-gift"></i> <span id="bubbleResultText"></span>
+            </div>
+        </div>
+        <div class="game-stats">
+            <div>⏱ Thời gian: <span id="timeLeft">15</span>s</div>
+            <div>⭐ Điểm: <span id="score">0</span></div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" role="region" aria-labelledby="features-title">
+        <div class="container">
+            <h2 class="section-title" id="features-title">Tại sao chọn G8 SMART?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Giao hàng toàn quốc</h3>
+                    <p>Miễn phí giao hàng đơn từ 500.000₫</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Bảo hành 12 tháng</h3>
+                    <p>Đổi trả miễn phí trong 7 ngày đầu</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>Hàng chính hãng 100%</h3>
+                    <p>Cam kết chính hãng từ nhà sản xuất</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tags"></i>
+                    <h3>Giá tốt nhất</h3>
+                    <p>Giảm giá mỗi ngày, ưu đãi liên tục</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" role="region" aria-labelledby="testimonials-title">
+        <div class="container">
+            <h2 class="section-title" id="testimonials-title">Khách hàng nói gì về G8 SMART</h2>
+            <div class="testimonial-list">
+                <div class="testimonial-card">
+                    <p class="content">"Sản phẩm chất lượng, giao hàng cực nhanh. Mình mua sạc ở đây rất yên tâm về bảo
+                        hành."</p>
+                    <div class="user">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar của Nguyễn Thảo"
+                            role="img" aria-label="Avatar của Nguyễn Thảo" width="50" height="50">
+                        <div>
+                            <h4>Nguyễn Thảo</h4>
+                            <span>Hà Nội</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="content">"Shop tư vấn nhiệt tình, giá tốt hơn nhiều nơi. Sẽ ủng hộ lâu dài!"</p>
+                    <div class="user">
+                        <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Avatar của Trần Minh" role="img"
+                            aria-label="Avatar của Trần Minh" width="50" height="50">
+                        <div>
+                            <h4>Trần Minh</h4>
+                            <span>TP. Hồ Chí Minh</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="content">"Pin dự phòng rất bền, sạc nhanh như quảng cáo. Đóng gói cẩn thận."</p>
+                    <div class="user">
+                        <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Avatar của Phạm Quân" role="img"
+                            aria-label="Avatar của Phạm Quân" width="50" height="50">
+                        <div>
+                            <h4>Phạm Quân</h4>
+                            <span>Đà Nẵng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog" role="region" aria-labelledby="blog-title">
+        <div class="container">
+            <h2 class="section-title" id="blog-title">Blog trao đổi</h2>
+            <div class="blog-list">
+                <div class="blog-card">
+                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/cap-type-c-to-type-c-anker-a8895-140w-1-2m.png"
+                        alt="Mẹo sử dụng sạc nhanh an toàn" loading="lazy" width="800" height="450"
+                        onerror="this.src='https://g8smart.vn/images/fallback-blog.jpg'">
+                    <h3>Mẹo sử dụng sạc nhanh an toàn</h3>
+                    <p>Những điều cần biết để bảo vệ pin và thiết bị khi dùng sạc nhanh.</p>
+                    <a href="/blog/sac-nhanh-an-toan" class="read-more">Đọc tiếp</a>
+                </div>
+                <div class="blog-card">
+                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/a/cap-sac-nhanh-tu-ngat-type-c-to-iphone-baseus-explorer-series-20w-1m.png"
+                        alt="So sánh các mẫu pin dự phòng tốt nhất 2025" loading="lazy" width="800" height="450"
+                        onerror="this.src='https://g8smart.vn/images/fallback-blog.jpg'">
+                    <h3>So sánh pin dự phòng tốt nhất 2025</h3>
+                    <p>Bảng xếp hạng các mẫu pin dự phòng bền và mạnh nhất năm nay.</p>
+                    <a href="/blog/pin-du-phong-2025" class="read-more">Đọc tiếp</a>
+                </div>
+                <div class="blog-card">
+                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/c/u/cu-sac-anker-b2348-1c1a-20w-kem-cap-type-c_1__2.png"
+                        alt="Hướng dẫn chọn cáp sạc phù hợp" loading="lazy" width="800" height="450"
+                        onerror="this.src='https://g8smart.vn/images/fallback-blog.jpg'">
+                    <h3>Cách chọn cáp sạc phù hợp</h3>
+                    <p>Độ dài, công suất, độ bền… bạn nên cân nhắc gì khi chọn cáp?</p>
+                    <a href="/blog/chon-cap-sac" class="read-more">Đọc tiếp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" role="region" aria-labelledby="faq-title">
+        <div class="container">
+            <h2 class="section-title" id="faq-title">Câu hỏi thường gặp</h2>
+            <div class="faq-item" role="button" aria-expanded="false" aria-controls="faq-answer-1">
+                <div class="faq-question">Tôi có thể đổi trả sản phẩm không?</div>
+                <div class="faq-answer" id="faq-answer-1">Có, G8 SMART hỗ trợ đổi trả trong vòng 7 ngày nếu sản phẩm bị
+                    lỗi hoặc không đúng mô tả.</div>
+            </div>
+            <div class="faq-item" role="button" aria-expanded="false" aria-controls="faq-answer-2">
+                <div class="faq-question">Thời gian giao hàng bao lâu?</div>
+                <div class="faq-answer" id="faq-answer-2">Thường từ 1–3 ngày với nội thành, và 3–5 ngày với ngoại thành.
+                </div>
+            </div>
+            <div class="faq-item" role="button" aria-expanded="false" aria-controls="faq-answer-3">
+                <div class="faq-question">Sản phẩm có bảo hành không?</div>
+                <div class="faq-answer" id="faq-answer-3">Tất cả sản phẩm đều bảo hành chính hãng 12 tháng.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSKH Messenger -->
+    <div class="cskh-button" id="cskhBtn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Facebook_Messenger_4_Logo.svg" alt="" width="32"
+            height="32">
+    </div>
+
+    <!-- Hộp chat giả lập -->
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <span>💙 G8 SMART CSKH</span>
+            <button id="closeChat" aria-label="Đóng hộp chat">&times;</button>
+        </div>
+        <div class="chat-body">
+            <p><strong>G8 SMART:</strong> Xin chào! Bạn cần hỗ trợ gì ạ? 💬</p>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Nhập tin nhắn..." aria-label="Nhập tin nhắn hỗ trợ">
+            <button aria-label="Gửi tin nhắn">Gửi</button>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Liên hệ với chúng tôi</h2>
+                <p class="section-subtitle">Hỗ trợ tư vấn và chăm sóc khách hàng tận tình</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3><strong>Thông tin liên hệ</strong></h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Địa chỉ cửa hàng</h4>
+                            <p>123 Nguyễn Huệ, Quận 1, TP.HCM<br> 456 Hoàn Kiếm, Hà Nội</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Hotline bán hàng</h4>
+                            <p>1900 1234 (miễn phí)<br> 028.1234.5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email hỗ trợ</h4>
+                            <p>hotro@g8smart.vn<br> banhang@g8smart.vn</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Giờ làm việc</h4>
+                            <p>8:00 - 22:00 (Thứ 2 - Chủ nhật)<br> Hỗ trợ online 24/7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3><strong>Yêu cầu hỗ trợ</strong></h3>
+                    <form id="contactForm">
+                        <input type="text" class="form-control" placeholder="Họ và tên *" required>
+                        <input type="tel" class="form-control" placeholder="Số điện thoại *" required>
+                        <input type="email" class="form-control" placeholder="Email">
+                        <select class="form-control" required>
+                            <option value="">Chọn loại yêu cầu</option>
+                            <option value="product">Tư vấn sản phẩm</option>
+                            <option value="order">Hỗ trợ đặt hàng</option>
+                            <option value="warranty">Bảo hành</option>
+                            <option value="complaint">Khiếu nại</option>
+                            <option value="other">Khác</option>
+                        </select>
+                        <textarea class="form-control" rows="4" placeholder="Nội dung yêu cầu *" required></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Gửi yêu cầu
+                        </button>
+                    </form>
+                </div>
+            </div>
+    </section>
+    </div>
+    </main>
+
+    <div class="contact-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4965297233373!2d106.7004238748045!3d10.773374089372352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f488c8c9c13%3A0x1d0dcdfc1f1ad731!2zMTIzIMSQLiBBQkMsIFF14bqjbmcgMSwgVHAuIEjhu5MgQ2jDrCBNaW5o!5e0!3m2!1svi!2s!4v1694939491915!5m2!1svi!2s"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            title="Bản đồ cửa hàng G8 SMART tại 123 Đường ABC, Quận 1, TP. Hồ Chí Minh">
+        </iframe>
+    </div>
+    </section>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>G8 SMART</h3>
+                    <p>Chuyên cung cấp sạc nhanh, cáp sạc, pin dự phòng chính hãng từ các thương hiệu uy tín.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên hệ</h3>
+                    <p><i class="fas fa-phone"></i> Hotline: 1900 1234</p>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:support@g8smart.vn">support@g8smart.vn</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#fast-charge">Sản phẩm</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <ul class="social-links">
+                        <li><a href="https://facebook.com/g8smart" aria-label="Theo dõi G8 SMART trên Facebook"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://instagram.com/g8smart" aria-label="Theo dõi G8 SMART trên Instagram"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/g8smart" aria-label="Theo dõi G8 SMART trên Twitter"><i
+                                    class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-bottom">© 2025 G8 SMART. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
