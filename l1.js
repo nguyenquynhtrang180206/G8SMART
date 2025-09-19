@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            const batteryMap = {
+                       const batteryMap = {
                 iphone15: 3349,
                 iphone14: 3279,
                 iphone13: 3227,
@@ -96,14 +96,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 xiaomi14: 4610,
                 'oppo-find': 5000
             };
-
             const batterySize = batteryMap[device] || 4000;
             const remaining = 100 - current;
-            const energyNeeded = (batterySize * remaining / 100) / 1000; // kWh
-            const timeHours = energyNeeded / (watt * 0.8); // 80% efficiency
-            const hours = Math.floor(timeHours);
-            const minutes = Math.round((timeHours - hours) * 60);
 
+            // Tính năng lượng cần sạc (Wh, gần đúng)
+            const energyNeeded = (batterySize * remaining / 100) / 1000;
+
+            // Hiệu suất 80%
+            let timeHours = energyNeeded / (watt * 0.8);
+
+            let hours = Math.floor(timeHours);
+            let minutes = Math.round((timeHours - hours) * 60);
+
+            // ⚡ Ép về tối thiểu 40 phút
+            if (hours === 0 && minutes < 40) {
+                hours = 0;
+                minutes = 40;
+            }
+
+
+            // ép về tối thiểu 40 phút
+            if (hours === 0 && minutes < 40) {
+                adjustedHours = 0;
+                adjustedMinutes = 40;
+            }
             resultText.innerHTML = `
                 <strong>${current}% → 100%:</strong> ${hours}h ${minutes}p<br>
                 <small>Sử dụng sạc ${watt}W (hiệu dụng ${Math.round(watt * 0.8)}W)</small>
