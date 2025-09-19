@@ -295,17 +295,20 @@ p,
 .banner {
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    width: 100%;
+    height: 100vh; /* Luôn full chiều cao màn hình */
     margin: 0;
     overflow: hidden;
 }
 
-.banner-img {
+/* Ảnh trong banner */
+.banner img {
     width: 100%;
-    height: 100vh;
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover;  /* Giữ tỷ lệ ảnh, phủ toàn khung */
     display: block;
 }
+
 
 /* Hero Section */
 .hero {
